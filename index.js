@@ -28,12 +28,13 @@ const questions = [
     type: "list",
     message: "What kind of license should your project have?",
     name: "license",
-    choices: ["MIT", "Apache 2.0", "GPL 3.0", "BSD 3", "None"],
+    choices: ["MIT", "Apache", "GPL", "BSD"]
   },
   {
     type: "input",
     message: "What command should be run to install dependencies?",
     name: "install",
+    default: "npm install",
   },
   {
     type: "input",
@@ -49,44 +50,18 @@ const questions = [
     type: "input",
     message: "What command should be run to run tests?",
     name: "tests",
+    default: "npm install",
   }]
 
-
-// function to write README file
-function writeToFile(fileName, data) {
-  //run generatemarkdown here
-  //make the file
-}
-
-// function to initialize program
 function init() {
   inquirer
     .prompt(questions)
     .then(function (response) {
-      console.log(response);
       const text = generateMarkdown(response);
-      console.log(text);
-
-      fs.writeFileSync("README.md", text);
+      fs.writeFileSync("README2.md", text);
     })
     .catch(function (err) {
-      console.log(err);
     });
 }
 
-async function init() {
-  try {
-    let response = await inquirer.prompt(questions);
-
-    console.log(response);
-    const text = generateMarkdown(response);
-    console.log(text);
-
-    fs.writeFileSync("README.md", text);
-  } catch (err) {
-    console.log(err);
-  }
-}
-
-// function call to initialize program
 init();
