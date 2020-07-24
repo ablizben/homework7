@@ -1,8 +1,8 @@
-# testing
-  ![GitHub License] (https://img.shields.io/static/v1?label=License&message=MIT&color=lightgreen)
+# project
+  ![GitHub License](https://img.shields.io/static/v1?label=License&message=MIT&color=lightgreen)
 
 
-  ## Description: testin 
+  ## Description: description 
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -16,19 +16,19 @@ To install the necessary dependencies, run the following command:
 npm install
 
 ## Usage 
-testing
+nada
 
 ## License
 This project is licensed under the MIT license.
 
 ## Contributing 
-
+nada
 
 ## Tests 
 To run tests, run the following command: 
 npm install
 
 ## Questions
-If you have any questions about the repo, open an issue or contact me directly at somethingnew.
-You can find more of my work at [somethingnew] (https://github.com/somethingnew/).
+If you have any questions about the repo, open an issue or contact me directly at ablizben@mgmail.com.
+You can find more of my work at [ablizben] (https://github.com/ablizben/).
 
