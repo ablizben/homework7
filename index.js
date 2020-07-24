@@ -58,7 +58,7 @@ function init() {
     .prompt(questions)
     .then(function (response) {
       const text = generateMarkdown(response);
-      fs.writeFileSync("README2.md", text);
+      fs.writeFileSync("READMEexample.md", text);
     })
     .catch(function (err) {
     });
